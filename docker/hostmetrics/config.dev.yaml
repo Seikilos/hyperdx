@@ -21,7 +21,7 @@ receivers:
       network:
 exporters:
   logging:
-    loglevel: debug
+    loglevel: error
   otlphttp:
     endpoint: 'http://otel-collector:4318'
     headers:
@@ -30,7 +30,7 @@ exporters:
 service:
   telemetry:
     logs:
-      level: 'debug'
+      level: 'error'
   pipelines:
     metrics:
       receivers: [mongodb, redis, hostmetrics]

@@ -17,7 +17,7 @@ API_VERSION = "0.0.1"
 app = FastAPI()
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.ERROR)
 
 
 def get_template_miner():
