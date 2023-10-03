@@ -24,7 +24,7 @@ addColors({
   silly: 'cyan',
 });
 
-const MAX_LEVEL = IS_PROD ? 'debug' : 'debug';
+const MAX_LEVEL = 'error' ; //IS_PROD ? 'debug' : 'debug';
 const DEFAULT_FORMAT = winston.format.combine(
   winston.format.errors({ stack: true }),
   winston.format.json(),
